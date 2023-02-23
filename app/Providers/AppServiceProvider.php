@@ -33,9 +33,9 @@ class AppServiceProvider extends ServiceProvider
         ->immediate();
 
         Octane::tick('using-task-worker', function() {
-            sleep(10);
+            sleep(5);
         })
-        ->seconds(5)
+        ->seconds(10)
         ->immediate();
     }
 }
